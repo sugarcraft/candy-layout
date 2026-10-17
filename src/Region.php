@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace SugarCraft\Constraints;
 
 /**
- * Own type to keep sugar-constraints a leaf package (no dep on candy-buffer).
+ * Own type to keep sugar-constraints a leaf package (no dep on sugar-cellbuffer).
  *
  * Mirrors ratatui's `Rect` — axis-aligned rectangle within a terminal grid.
  *
  * NOTE: this is intentionally NOT the same class as {@see \SugarCraft\Buffer\Region}
- * in candy-buffer — a deliberate leaf-package name collision so sugar-constraints
+ * in sugar-cellbuffer — a deliberate leaf-package name collision so sugar-constraints
  * stays dependency-free. The two are converted at the boundary by
  * candy-sprinkles' `RegionBridge`; do not conflate them.
  */
